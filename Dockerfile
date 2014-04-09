@@ -14,7 +14,6 @@ ADD /start-haproxy.sh /start-haproxy.sh
 ADD /run.sh /run.sh
 ADD /supervisord-haproxy.conf /etc/supervisor/conf.d/supervisord-haproxy.conf
 RUN chmod 755 /*.sh
-RUN rm *.zip
 
 EXPOSE 80
 CMD ["/run.sh"]
